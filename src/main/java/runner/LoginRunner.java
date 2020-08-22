@@ -9,10 +9,10 @@ import utils.ThreadLocalBaseDriver;
 @CucumberOptions(
         plugin = {
                 "html:target/cucumber-report",
-                "com.cucumber.listener.ExtentCucumberFormatter:target/extent_report/index.html" // extent report plugin
+                "com.cucumber.listener.ExtentCucumberFormatter:target/extent-report/index.html" // extent report plugin
         },
         features = {
-                "src/test/java/features/logpage.feature"
+                "src/test/java/features"
         },
         glue = {"stepDef"} ,// tell cucumber where to look for step definitions
         dryRun = false
